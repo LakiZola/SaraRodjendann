@@ -34,7 +34,7 @@
 }
 
    html, body {
-     background-color: rgb(102, 0, 80);
+     background-color: #A1866F;
     
         overflow-x: hidden;
        
@@ -50,7 +50,7 @@
 
     .hero {
         animation: Fade 0.6s;
-          background-color: rgb(102, 0, 80);
+          background-color:#A1866F;
       position: relative;
       width: 100%;
       height: 100%;
@@ -159,10 +159,11 @@ svg {
     flex-direction: column;
     align-items: center;   /* center horizontally */
     padding: 20px 0 60px 0; /* smaller top padding moves content up */
-    background-image: linear-gradient(rgb(102, 0, 80), rgb(37, 0, 29));
+    background-image: linear-gradient(#A1866F, #64503e);
 }
 
 .eighteen img {
+  
     display: block;
     margin: -120px auto 0 auto; /* moves image 40px up without breaking flow */
     width: 90%;
@@ -182,7 +183,7 @@ svg {
     padding: 0;
     margin: 0;
     height: 200px;
-    background-color: antiquewhite;
+    background-color: #FFF8E7;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -192,13 +193,13 @@ svg {
     margin-bottom: auto;
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(43, 0, 0);
+    color:#2C1F16;
 }
 .SlicneClasse1{
     padding: 0;
     margin: 0;
     height: 200px;
-    background-color:  rgb(37, 0, 29);
+    background-color: #8B6D5C;
     display: flex;
 
     justify-content: center;
@@ -216,7 +217,7 @@ svg {
     padding: 0;
     margin: 0;
     height: 200px;
-    background-color: antiquewhite ;
+  background-color: #FFF8E7;
     display: flex;
  flex-direction: column;
     justify-content: center;  /* vertical centering */
@@ -227,13 +228,76 @@ svg {
  
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(37, 0, 29);
+      color:#2C1F16;
 
 }
 
 
 
+.SlicneClasse3{
+   margin: 0;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-color: #8B6D5C;
+    display: flex;
+ flex-direction: column;
+    justify-content: center;  /* vertical centering */
+    align-items: center; 
+}
+.SlicneClasse3 h1{
+    
+ 
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
 
+}
+
+.SlicneClasse3 p{
+     margin-top: -15px;
+ 
+ width: 90%;
+ margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+
+}
+
+.SlicneClasse4{
+   margin: 0;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-color: #FFF8E7;
+    display: flex;
+ flex-direction: column;
+    justify-content: center;  /* vertical centering */
+    align-items: center; 
+}
+.SlicneClasse4 h1{
+    
+ 
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#2C1F16;
+
+}
+
+.SlicneClasse4 p{
+    
+
+ width: 90%;
+ margin-top: -15px;
+ margin-bottom: 40px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#2C1F16;
+
+}
 .SlicneClasse2 button{
     margin-left: auto;
     margin-right: auto;
@@ -277,7 +341,7 @@ border: 1px solid grey;
   align-items: center;     /* center horizontally */
   text-align: center;
   padding: 20px 20px 60px 20px; /* top padding moves content down */
-  background: linear-gradient(180deg, rgb(102,0,80), rgb(0,0,0));
+  background-image: linear-gradient(#A1866F, #130e0b);
   color: white;
   font-family: 'Times New Roman', Times, serif;
   position: relative; /* keep for layering if needed */
@@ -326,11 +390,8 @@ border: 1px solid grey;
   z-index: 1;
 }
 /* Responsive */
-
-
-
-
   </style>
+
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -351,7 +412,7 @@ border: 1px solid grey;
   </div>
 
   <div class="eighteen">
-<img src="18ballonfull.png">
+<img src="MoreBeige18.png">
 <p>ROĐENDANA</p>
   </div>
 
@@ -369,6 +430,16 @@ border: 1px solid grey;
   
 </a>
     </div>
+<div class="SlicneClasse3">
+    <h1>Dress Code</h1>
+    <p>Želim da ova noć bude poput gala večeri. Zato te molim da dođeš u elegantnom izdanju.</p>
+  </div>
+
+<div class="SlicneClasse4">
+    <h1>Potvrda Dolaska</h1>
+    <p>Molim te da potvrdiš dolazak do 10.10.2025. godine porukom ili pozivom.</p>
+  </div>
+
    <div class="odborojavanje">
   <h1>VIDIMO SE!</h1>
   <div class="countdown-grid">
@@ -405,7 +476,8 @@ function createConfetti() {
     confetti.style.left = Math.random() * 100 + '%';
 
     // pink color variation
-    const hue = 320 + Math.random() * 40; // pink/purple range
+   const hue = 45 + Math.random() * 15; // random hue between 45 and 60 (yellow)
+// pink/purple range
     confetti.style.backgroundColor = `hsl(${hue}, 80%, 70%)`;
 
     // random animation duration and delay
